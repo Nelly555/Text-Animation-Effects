@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#1d0141;
+}
+h2{
+    font-size: 6em;
+    letter-spacing: 15px;
+    color:#0e3742;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-box-reflect: below 1px linear-gradient, 
+    (transparent, #0008);
+    line-height: 0.7em;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%, 18%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 95% 
+   {
+        color: #0e3742;
+        text-shadow: none;    
+    }
+   18.5%, 20.5%, 30.5%, 50.5%, 60.5%, 70.5%, 80.5%, 90.5%, 95.5%, 100%{
+    color:rgba(255, 255, 255, 0.753);
+    text-shadow: 0 0 10px #0c5aeb,
+    0 0 20px #067be7,
+    0 0 40px #0b70ce,
+    0 0 80px #0761b6,
+    0 0 170px #0969c4,
+    0 0 320px #0c5aeb;
+   }
+        
+}
+
